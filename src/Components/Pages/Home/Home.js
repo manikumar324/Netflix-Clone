@@ -7,6 +7,10 @@ import { FaPlay } from "react-icons/fa";
 import { MdOutlineInfo } from "react-icons/md";
 import TitleCards from '../../TitleCards/TitleCards';
 import Footer from '../../Footer/Footer';
+import TitleCardBlockBuster from '../../TitleCardBlockbuster/TitleCardBlockBuster';
+import OnlyOnNetflix from '../../OnlyOnNetflix/OnlyOnNetflix';
+import TopPicks from '../../TopPicks/TopPicks';
+import Upcoming from '../../Upcoming/Upcoming';
 
 const Home = () => {
   return (
@@ -28,10 +32,10 @@ const Home = () => {
           </div>
         </div>
         <div className='more-cards'>
-          <TitleCards title={"Blockbuster Movies"} category={"top_rated"}/>
-          <TitleCards title={"Only On Netflix"} category={"popular"}/>
-          <TitleCards title={"Upcoming"} category={"upcoming"}/>
-          <TitleCards title={"Top Picks For You"} category={"now_playing"}/>
+          <TitleCardBlockBuster />
+          <OnlyOnNetflix />
+          <Upcoming/>
+          <TopPicks/>
         </div>
         <Footer />
     </div>
